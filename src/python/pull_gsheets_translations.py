@@ -85,7 +85,7 @@ for language in languages:
         language_df = language_df[language_df['parentKey']!='']
         
         
-        # return a df with only the parentKey,fieldKey and translatedValue columns
+        # return a df with only the parentKey,fieldKey, childKey and translatedValue columns
         language_df = language_df[['parentKey','fieldKey','translatedValue','childKey']]
 
         parentKeyDict = {}
